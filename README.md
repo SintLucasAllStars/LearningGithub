@@ -71,3 +71,5 @@ git push
 ```
 git pull
 ```
+
+Extra questions to: davidjonasdesign@gmail.com

@@ -19,20 +19,23 @@ First steps on GitHub
 
 1) Create repository on github.com
 2) Clone repository.
-```git clone https://....
+```
+git clone https://....
 
 ```
 
 3) code your awesome features
 4) Add all modified files.
-```git add file1.txt file2.md file3.cs
+```
+git add file1.txt file2.md file3.cs
 
 ```
 5) Commit
-```git commit -m"What I have done..."
+```
+git commit -m"What I have done..."
 
 ```
 6) Push to the github server
-```git push
-
+```
+git push
 ```

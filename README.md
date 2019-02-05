@@ -95,7 +95,7 @@ It somewhat worked but it is still very unstable and in alpha quality. It's wort
 
 [Github for Unity repository](https://github.com/github-for-unity/Unity)
 
-[A good tutorial on using Unity and Git](https://www.youtube.com/watch?v=qpXxcvS-g3g) independently from the addon == Make sure you pay attention to the Unity settings and the changes to the .gitignore file.
+[A good tutorial on using Unity and Git](https://thoughtbot.com/blog/how-to-git-with-unity) independently from the addon == Make sure you pay attention to the Unity settings.
 
 ## Contact
 Extra questions to: davidjonasdesign@gmail.com

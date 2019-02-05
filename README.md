@@ -90,7 +90,7 @@ __  __      _ __       _____ ____
               /____/              
 ```
 
-We tried the brand new add-on "GitHub for Unity" in class, this was 7/2/2018.
+We tried the brand new add-on "GitHub for Unity" in class, this was 7/2/2018. (To be updated)
 It somewhat worked but it is still very unstable and in alpha quality. It's worth a try and keeping an eye on the development.
 
 [Github for Unity repository](https://github.com/github-for-unity/Unity)

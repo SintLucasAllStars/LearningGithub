@@ -88,10 +88,10 @@ MyRepository <- ROOT
      |- Library
      |- ...
 ```
-2. Make sure you have the Unity configurations noted (here)[https://thoughtbot.com/blog/how-to-git-with-unity]
+2. Make sure you have the Unity configurations noted [here](https://thoughtbot.com/blog/how-to-git-with-unity)
 
 ## Unity plugin
 
 There is a unity github plugin that can help you configure everything and manage commits push pull etc all from within Unity.
-Probably a good idea to try (GitHub for Unity)[https://unity.github.com/].
+Probably a good idea to try [GitHub for Unity](https://unity.github.com/).
 

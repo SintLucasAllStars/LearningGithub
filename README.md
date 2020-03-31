@@ -1,55 +1,35 @@
 # LearningGithub
-First steps on GitHub
-
-```
-                    .sssssssss.
-              .sssssssssssssssssss
-            sssssssssssssssssssssssss
-           ssssssssssssssssssssssssssss
-            @@sssssssssssssssssssssss@ss
-            |s@@@@sssssssssssssss@@@@s|s
-     _______|sssss@@@@@sssss@@@@@sssss|s
-   /         sssssssss@sssss@sssssssss|s
-  /  .------+.ssssssss@sssss@ssssssss.|
- /  /       |...sssssss@sss@sssssss...|
-|  |        |.......sss@sss@ssss......|
-|  |        |..........s@ss@sss.......|
-|  |        |...........@ss@..........|
- \  \       |............ss@..........|
-  \  '------+...........ss@...........|
-   \________ .........................|
-            |.........................|
-           /...........................\
-          |.............................|
-             |.......................|
-                 |...............|
-
- ________  ___  _________  ___  ___  ___  ___  ________                                
-|\   ____\|\  \|\___   ___\\  \|\  \|\  \|\  \|\   __  \    
-\ \  \___|\ \  \|___ \  \_\ \  \\\  \ \  \\\  \ \  \|\ /_   
- \ \  \  __\ \  \   \ \  \ \ \   __  \ \  \\\  \ \   __  \  
-  \ \  \|\  \ \  \   \ \  \ \ \  \ \  \ \  \\\  \ \  \|\  \
-   \ \_______\ \__\   \ \__\ \ \__\ \__\ \_______\ \_______\
-    \|_______|\|__|    \|__|  \|__|\|__|\|_______|\|_______|
-
-```
-
 
 ## Terms covered
-* Repository
-* Clone
-* Add
-* Commit
-* Push
-* Pull
-* Diff
-* Branch
-* Merge
-* Checkout
-* Fork
-* Tags
+### Repository
+That's where your project lives
+### Clone
+Create a local version of your repository. You will work, add and commit on this version and then push it all to the server.
+### Add
+Add a new file to the project so that it's version gets tracked or mark your current changes to an existing file so that they get commited on the next commit
+### Commit
+Create a new version of your project locally with all the changes you have added. You should do this often, everytime you add a new feature or finish a part of your code. The more you do this the more control over your history you will have.
+### Push
+Send all the new commits to the server
+### Pull
+Update your local clone with anything new from the server.
+### Diff
+Check a file and compare the differences between two different versions of that file.
+### Branch
+This is similar to creating a separate copy of the project to develop a specific feature or test a solution. The two versions can evolve in parallel and you can jump from one to the other or merge them back into one at a future point.
+### Merge
+Takes all the changes from one branch and merges them to another.
+### Checkout
+move your local copy between different versions, for example go back to a past version or switch to a different branch.
+### Fork
+Create a FULL NEW repository based on this one. This is different from branching because it basically copys all your history into a new repository and makes an exact copy. This copy can in the future be merged into the original though.
 
-## Workflow
+## Other terms you can check on your own
+
+### Tags
+### Releases
+
+## Workflow (Commandline)
 
 1) Create repository on github.com
 2) Clone repository to your local copy.
@@ -79,7 +59,15 @@ git push
 git pull
 ```
 
-## GitHub for unity
+8) Create a new branch for a feature or to isolate your work.
+
+```
+git checkout -b myNewBranchName
+```
+
+
+
+## Git with Unity
 
 ```
 __  __      _ __       _____ ____
@@ -89,13 +77,20 @@ __  __      _ __       _____ ____
 \____/_/ /_/_/\__/\__, /____/_____/  
               /____/              
 ```
+Using git with Unity has a few caveats. There are a lot of files being changed and managed by the editor and that cause chaos and conflicts very easily. Therefore here are some useful tips.
 
-We tried the brand new add-on "GitHub for Unity" in class, this was 7/2/2018. (To be updated...)
-It somewhat worked but it is still very unstable and in alpha quality. It's worth a try and keeping an eye on the development.
+0. Use the Unity .gitignore from github (already included in our assignments).
+1. Make sure your Unity Project lives IN THE ROOT of your repository. This means your Folder structure should be:
+```
+MyRepository <- ROOT
+     |- .gitignore
+     |- Assets
+     |- Library
+     |- ...
+```
 
-[Github for Unity repository](https://github.com/github-for-unity/Unity)
+## Unity plugin
 
-[A good tutorial on using Unity and Git](https://thoughtbot.com/blog/how-to-git-with-unity) independently from the addon == Make sure you pay attention to the Unity settings.
+There is a unity github plugin that can help you configure everything and manage commits push pull etc all from within Unity.
+Probably a good idea to try (GitHub for Unity)[https://unity.github.com/].
 
-## Contact
-Extra questions to: davidjonasdesign@gmail.com

@@ -88,6 +88,7 @@ MyRepository <- ROOT
      |- Library
      |- ...
 ```
+2. Make sure you have the Unity configurations noted (here)[https://thoughtbot.com/blog/how-to-git-with-unity]
 
 ## Unity plugin
 

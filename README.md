@@ -83,26 +83,26 @@ In this case you would have 4 options:
 1) Call Die() and keep your own version discarding the other:
 ```
 if(alive) {
-  	Die();
+  Die();
 }
 ```
 2) Call ContinueGame() and keep the version in master:
 ```
 if(alive) {
-  	ContinueGame();
+  ContinueGame();
 }
 ```
 3) Merge the two by, for example calling Die() first and then ContinueGame()
 ```
 if(alive) {
-  	Die();
-    ContinueGame();
+  Die();
+  ContinueGame();
 }
 ```
 4) You can also decide to do something completely different:
 ```
 if(alive) {
-  	KillAllOtherPlayers();
+  KillAllOtherPlayers();
 }
 ```
 

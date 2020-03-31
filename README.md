@@ -64,8 +64,52 @@ git pull
 ```
 git checkout -b myNewBranchName
 ```
+## Solving conflicts
+Sometimes when you try to pull code from a colleague or when you try to merge your branch into another, you can have conflicts. This means the same file got changed in the same place by both versions and git does not know which one to keep or how to merge them together. In most cases you will get simple conflicts where you want to either keep your version or the other version, in these cases Github Desktop will give you a way to solve these conflicts very easily by just selecting to keep one version or another.
+In any case, when a conflict happens git will change your file and add some weird markings to it. It will look something like this:
 
+```
+if(alive) {
+<<<<<<< HEAD
+  Die();
+=======
+  ContinueGame();
+>>>>>>> master
+}
+```
+In this example, you decided to call Die() when alive is true, and on master someone decided that ContinueGame() should be called instead.
+To solve the conflict you always havo to delete the lines that start with "<<<<<<<" or ">>>>>>>" or "=======". And merge the code appropriately.
+In this case you would have 4 options:
+1) Call Die() and keep your own version discarding the other:
+```
+if(alive) {
+  	Die();
+}
+```
+2) Call ContinueGame() and keep the version in master:
+```
+if(alive) {
+  	ContinueGame();
+}
+```
+3) Merge the two by, for example calling Die() first and then ContinueGame()
+```
+if(alive) {
+  	Die();
+    ContinueGame();
+}
+```
+4) You can also decide to do something completely different:
+```
+if(alive) {
+  	KillAllOtherPlayers();
+}
+```
 
+There are tools to help you find and fix all your conflicts for the major editors we use:\
+[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_merge-conflicts)\
+[Rider](https://www.jetbrains.com/help/rider/Resolving_Conflicts.html#vcs-resolve-conflicts)\
+Visual Studio has the feature but no clear documentation.
 
 ## Git with Unity
 

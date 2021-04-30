@@ -111,6 +111,12 @@ There are tools to help you find and fix all your conflicts for the major editor
 [Rider](https://www.jetbrains.com/help/rider/Resolving_Conflicts.html#vcs-resolve-conflicts)\
 Visual Studio has the feature but no clear documentation.
 
+## Git LFS (Large File Storage)
+
+If your projects has large files (100Mb+) then you will need to use LFS. Check [the instructions here](https://git-lfs.github.com/)
+Keep in mind the limits of [LFS on Github](https://docs.github.com/en/github/managing-large-files/about-storage-and-bandwidth-usage) (1Gb/Month bandwith)
+Also, if you need a much bigger limit consider switching to [GitLab](https://about.gitlab.com/blog/2015/04/08/gitlab-dot-com-storage-limit-raised-to-10gb-per-repo/#:~:text=To%20celebrate%20today's%20good%20news,and%20they%20include%20unlimited%20collaborators.) (10GB/repository, no bandwith limits)
+ 
 ## Git with Unity
 
 ```
@@ -137,5 +143,5 @@ MyRepository <- ROOT
 ## Unity plugin
 
 There is a unity github plugin that can help you configure everything and manage commits push pull etc all from within Unity.
-Probably a good idea to try [GitHub for Unity](https://unity.github.com/).
+As tested, it is not great and development of the plugin seems to be stalled. In any case you could try [GitHub for Unity](https://unity.github.com/).
 

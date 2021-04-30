@@ -13,6 +13,8 @@ Create a new version of your project locally with all the changes you have added
 Send all the new commits to the server
 ### Pull
 Update your local clone with anything new from the server.
+### Fetch
+Download information and updates from the server but don't apply it (pull) yet.
 ### Diff
 Check a file and compare the differences between two different versions of that file.
 ### Branch
@@ -39,27 +41,33 @@ git clone https://....
 ```
 
 3) code your awesome features
-4) Add all modified files.
+
+4) Check your status. 
+```
+git status
+```
+
+5) Add all modified files.
 ```
 git add file1.txt file2.md file3.cs
 
 ```
-5) Commit
+6) Commit
 ```
 git commit -m"What I have done..."
 
 ```
-6) Push to the github server
+7) Push to the github server
 ```
 git push
 ```
 
-7) Git pull get latest version
+8) Git pull get latest version
 ```
 git pull
 ```
 
-8) Create a new branch for a feature or to isolate your work.
+9) Create a new branch for a feature or to isolate your work.
 
 ```
 git checkout -b myNewBranchName

@@ -47,7 +47,7 @@ git clone https://....
 git status
 ```
 
-5) Add all modified files.
+5) Add all modified/new files.
 ```
 git add file1.txt file2.md file3.cs
 
